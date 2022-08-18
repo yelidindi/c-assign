@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+   int flag=0;
+   int n,num;
+   printf("enter a positive numbers");
+  scanf("%d",&n);
+  printf("enter numbers\n");
+  scanf("%d",&num);
+  int i=num;
+  while(n>1)
+  {
+      printf("enter numbers\n");
+      scanf("%d",&num);
+      if(i==num)
+      {
+          flag=1;
+      }
+      n--;
+  }
+  if(flag==0)
+  printf("UNIQUE\n");
+  else
+  printf("DUPLICATE\n");
+}
